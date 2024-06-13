@@ -1,0 +1,591 @@
+body{
+    background-color: 	#898989;
+    margin: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ----- Create the header and  ADD SCP logo ----- */
+
+.Header-container{
+    background-color: 	#000000;
+    border: 1px solid black;
+    color: white;
+    height: auto;
+
+    padding: 10px;
+    box-shadow: 3px 10px 5px rgba(28, 27, 27, 0.3);
+}
+
+.logo-img{
+    width: 300px;
+}
+
+.Flex-row-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Flex-row{
+    display: flex;
+    align-items: center;
+}
+
+.font-size-title{
+    font-size: larger;
+}
+
+.sec-cont-prot{
+    font-family:Cambria, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e3e3e3;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.search-bar{
+    margin-right: 70px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: rgb(228, 225, 225);
+}
+
+@media (max-width: 1100px)
+{
+    .logo-img{
+        width: 200px;
+    }
+
+    .font-size-title{
+        font-size: medium;
+    }
+
+    .search-bar{
+        margin-right: 30px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 200px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        background-color: rgb(228, 225, 225);
+    }
+}
+
+@media (max-width: 800px)
+{
+    .logo-img{
+        width: 100px;
+    }
+
+    .font-size-title{
+        font-size: small;
+    }
+
+    .search-bar{
+        margin-right: 30px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 200px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+        background-color: rgb(228, 225, 225);
+    }
+}
+
+@media (max-width: 600px)
+{
+    .logo-img{
+        width: 100px;
+    }
+
+    .font-size-title{
+        font-size: x-small;
+    }
+
+    .search-bar{
+        margin-right: 30px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 90px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+        background-color: rgb(228, 225, 225);
+    }
+
+
+    .Quick-search-links{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        align-items: center;
+        font-size: xx-small;
+    }
+
+    .Home-link{
+        font-size: larger;
+        background-color: #898989;
+        padding: 10px;
+        margin-right: 30px;
+        border-radius: 5px;
+    }
+    
+    .about-link{
+        font-size: larger;
+        background-color: #898989;
+        padding: 10px;
+        margin-right: 30px;
+        border-radius: 5px;
+    }
+    
+    #access-create-component{
+        font-size: larger;
+        background-color: #898989;
+        padding: 10px;
+        margin-right: 40px;
+        border-radius: 5px;
+    }
+}
+
+
+.Quick-search-links{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.Home-link{
+    font-size: larger;
+    background-color: #898989;
+    padding: 10px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.Home-link:hover{
+    background-color: #525252;
+}
+
+.about-link{
+    font-size: larger;
+    background-color: #898989;
+    padding: 10px;
+    margin-right: 60px;
+    border-radius: 5px;
+}
+
+.about-link:hover{
+    background-color: #525252;
+}
+
+.collections-input{
+    padding: 5px;
+}
+
+/*------------Create Component------------------*/
+
+.Create-container-SCP{
+    display: none;
+    background-color: #e3e3e3;
+    margin-top: 20px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    box-shadow: 3px 10px 5px rgba(28, 27, 27, 0.3);
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.access-container{
+    background-color: 	#000000;
+    border: 1px solid black;
+    color: white;
+    width: max-content;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 3px 10px 5px rgba(28, 27, 27, 0.3);
+    font-size: x-large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.access-btn-create-cont{
+    width: 400px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 1px solid grey;
+    background-color: #c5c5c5;
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.access-btn-create-cont:hover{
+    background-color:#525252;
+    color: #c5c5c5;
+}
+
+.Create-scp-tagline
+{
+    text-align: center;
+}
+
+.Flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-input{
+    height: 60px;
+    width: 600px;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 2px;
+    
+}
+
+.select-input{
+    height: 60px;
+    width: 300px;
+    text-align: left;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.description-input{
+    height: 150px;
+    width: 600px;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containment-input{
+    height: 150px;
+    width: 600px;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.image-container{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.image-input{
+    border: 1px solid black;
+    background-color: 	#c7c7c7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.second-container-scp-create{
+    padding-left: 20px;
+}
+
+.btn-create-cancel-container{
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Cancel-btn{
+    height: 70px;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    font-size: larger;
+}
+
+.Cancel-btn:hover{
+    background-color: rgba(255, 61, 61, 0.596);
+    
+}
+
+.Create-btn{
+    height: 70px;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    font-size: larger;
+}
+
+.Create-btn:hover{
+    background-color: rgba(0, 255, 0, 0.589);
+}
+
+/*---------------ReadComponent---------------------*/
+
+.Document{
+    background-color: #0000007e;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.scp-image{
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 4px 10px 5px rgba(28, 27, 27, 0.3);
+}
+
+.scp-doc-details{
+    background-color: #ffffffe3;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    border: 2px solid rgb(138, 138, 138);
+    border-radius: 5px;
+}
+
+.flex-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-info-btns{
+    display: flex;
+    justify-content:end;
+    gap: 25px;
+}
+
+.delete-btn{
+    background-color: rgba(255, 0, 0, 0.711);
+    height: 50px;
+    width: 150px;
+    border: 1px solid  rgba(0, 0, 0, 0.771);
+    border-radius: 4px;
+    font-size: medium;
+}
+
+.delete-btn:hover{
+    background-color: rgba(255, 0, 0, 0.923);
+}
+
+.update-btn{
+    background-color: rgba(0, 221, 255, 0.797);
+    height: 50px;
+    width: 150px;
+    border: 1px solid  rgba(0, 0, 0, 0.771);
+    border-radius: 4px;
+    font-size: medium;
+}
+
+.update-btn:hover{
+    background-color:  rgb(0, 221, 255);
+}
+
+.returnToTopButton{
+    background-color: #ffffffe3;
+    height: 60px;
+    width: 200px;
+    margin: 10px;
+    font-size: medium;
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+
+.returnToTopButton:hover{
+    background-color: #dddddd;
+}
+
+.btn-container-read-scroll-up
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*---------------------UpdateComponent---------------------*/
+
+.update-tagline-form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.UpdateForm{
+    background-color: #bdbdbdb7;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.flex-row-update{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flex-column-update{
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction:column;
+}
+
+.SCP-name{
+    height: 60px;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 5px;
+    font-size: large;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.SCP-class{
+    height: 60px;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 5px;
+    font-size: large;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.SCP-description{
+    height: 400px;
+    width: 750px;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.SCP-Containment{
+    height: 400px;
+    width: 750px;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.flex-row-upd{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-update-form{
+    background-color: rgba(0, 221, 255, 0.797);
+    height: 50px;
+    width: 150px;
+    border: 1px solid  rgba(0, 0, 0, 0.771);
+    border-radius: 4px;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.btn-update-form:hover{
+    background-color:  rgb(0, 221, 255);
+}
+
+.btn-container-flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1600px){
+    .SCP-description{
+        height: 400px;
+        width: 600px;
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 5px;
+        font-size: medium;
+    }
+    
+    .SCP-Containment{
+        height: 400px;
+        width: 400px;
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 5px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 1000px){
+    .flex-row-update{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .SCP-description{
+        height: 400px;
+        width: 500px;
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 5px;
+        font-size: medium;
+    }
+    
+    .SCP-Containment{
+        height: 400px;
+        width: 500px;
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 5px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 600px){
+    .SCP-description{
+        height: 300px;
+        width: 370px;
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 5px;
+        font-size: medium;
+    }
+    
+    .SCP-Containment{
+        height: 300px;
+        width: 370px;
+        border: 2px solid rgb(120, 120, 120);
+        border-radius: 5px;
+        font-size: medium;
+    }
+}
